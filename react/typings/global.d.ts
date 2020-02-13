@@ -1,3 +1,6 @@
 interface Window extends Window {
-  dataLayer: any[]
+  __cybersource__: {
+    orgId: string
+    merchantId: string
+  }
 }
