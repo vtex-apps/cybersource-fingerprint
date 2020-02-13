@@ -1,9 +1,9 @@
 {
-  "name": "YOURAPPNAME",
+  "name": "cybersource-fingerprint",
   "vendor": "vtex",
   "version": "0.0.1",
-  "title": "CHANGEME",
-  "description": "CHANGEME",
+  "title": "CyberSource Fingerprint",
+  "description": "",
   "billingOptions": {
     "termsURL": "",
     "support": {
@@ -21,12 +21,17 @@
     "vtex.pixel-interfaces": "1.x"
   },
   "settingsSchema": {
-    "title": "YOUR APP NAME",
+    "title": "CyberSource Fingerprint",
     "type": "object",
     "properties": {
-      "gtmId": {
-        "title": "SAMPLE FIELD",
-        "description": "Enter the ID (GTM-XXXX) from your Google Tag Manager",
+      "orgId": {
+        "title": "Org ID",
+        "description": "To get this value, contact Braspag",
+        "type": "string"
+      },
+      "merchantId": {
+        "title": "Merchant ID",
+        "description": "To get this value, contact Braspag",
         "type": "string"
       }
     }
