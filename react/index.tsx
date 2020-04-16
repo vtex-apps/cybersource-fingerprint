@@ -14,26 +14,26 @@ interface Params extends Settings {
 
 function createPixelP({ orgId, merchantId, sessionId }: Params) {
   const p = document.createElement('p')
-  p.setAttribute('style', `background:url(https://h.online-metrix.net/fp/clear.png?org_id=${orgId}&amp;session_id=${merchantId}${sessionId}&amp;m=1)`)
+  p.setAttribute('style', `background:url(https://h.online-metrix.net/fp/clear.png?org_id=${orgId}&session_id=${merchantId}${sessionId}&m=1)`)
   document.body.appendChild(p)
 }
 
 function createPixelImg({ orgId, merchantId, sessionId }: Params) {
   const img = document.createElement('img')
-  img.setAttribute('src', `https://h.online-metrix.net/fp/clear.png?org_id=${orgId}&amp;session_id=${merchantId}${sessionId}&amp;m=2`)
+  img.setAttribute('src', `https://h.online-metrix.net/fp/clear.png?org_id=${orgId}&session_id=${merchantId}${sessionId}&m=2`)
   document.body.appendChild(img)
 }
 
 function createPixelObject({ orgId, merchantId, sessionId }: Params) {
   const objElement = document.createElement('object')
   objElement.setAttribute('type', 'application/x-shockwave-flash')
-  objElement.setAttribute('data', `https://h.online-metrix.net/fp/fp.swf?org_id=${orgId}&amp;session_id=${merchantId}${sessionId}`)
+  objElement.setAttribute('data', `https://h.online-metrix.net/fp/fp.swf?org_id=${orgId}&session_id=${merchantId}${sessionId}`)
   objElement.setAttribute('width', '1')
   objElement.setAttribute('height', '1')
   objElement.setAttribute('id', 'thm_fp')
   const param = document.createElement('param')
   param.setAttribute('name', 'movie')
-  param.setAttribute('value', `https://h.online-metrix.net/fp/fp.swf?org_id=${orgId}&amp;session_id=${merchantId}${sessionId}`)
+  param.setAttribute('value', `https://h.online-metrix.net/fp/fp.swf?org_id=${orgId}&session_id=${merchantId}${sessionId}`)
   objElement.appendChild(param)
   const div = document.createElement('div')
   objElement.appendChild(div)
@@ -43,7 +43,7 @@ function createPixelObject({ orgId, merchantId, sessionId }: Params) {
 function createPixelScript({ orgId, merchantId, sessionId }: Params) {
   const scriptElement = document.createElement('script')
   scriptElement.setAttribute('type', 'text/javascript')
-  scriptElement.setAttribute('src', `https://h.online-metrix.net/fp/check.js?org_id=${orgId}&amp;session_id=${merchantId}${sessionId}`)
+  scriptElement.setAttribute('src', `https://h.online-metrix.net/fp/check.js?org_id=${orgId}&session_id=${merchantId}${sessionId}`)
   document.body.appendChild(scriptElement)
 }
 
