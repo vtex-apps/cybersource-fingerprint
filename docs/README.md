@@ -1,6 +1,6 @@
 
 
-📢 Use this project, [contribute](https://github.com/vtex-apps/cybersource-fingerprint) to it or open issues to help evolve it using [Store Discussion](https://github.com/vtex-apps/store-discussion).
+=� Use this project, [contribute](https://github.com/vtex-apps/cybersource-fingerprint) to it or open issues to help evolve it using [Store Discussion](https://github.com/vtex-apps/store-discussion).
 
 # CyberSource Fingerprint
 
@@ -20,7 +20,7 @@ vtex install vtex.cybersource-fingerprint
 
 2. Open the app settings on your admin (`/admin/apps`) and fill the Org Id and Merchant Id.
 
-## Contributors ✨
+## Contributors (
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
@@ -32,3 +32,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+
+**Upcoming documentation:**
+
+ - [Fix external endpoints](https://github.com/vtex-apps/cybersource-fingerprint/pull/3)
